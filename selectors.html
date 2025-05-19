@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<body>
+    <div>
+        <!-- Element Selector -->
+
+        <!-- <style>
+            h1{
+                background-color: antiquewhite;
+                color: brown;
+            }
+        </style>
+        <h1>Element Selectors</h1> -->
+
+
+        <!-- ID Selectors 
+         
+            ID are for unique identification
+            ID cannot be used for more than one element
+            CSS for IDs are added using '#'
+        
+        -->
+
+        <!-- <style>
+            #id-select{
+                background-color: beige;
+                color: violet;
+            }
+        </style>
+        <p id="id-select">ID Selector</p> -->
+
+        <!-- Class Selectors 
+         
+            Class is used for general identification
+            classes can be used for more than one element
+            for adding css to a class you will have to declare it using '.'
+        
+        -->
+
+            <!-- <style>
+                .class-select{
+                    background-color: black;
+                    color: azure;
+                }
+            </style>
+            <p class="class-select">Class Selector</p> -->
+
+
+
+            <!-- Universal Selector 
+            
+                - Can be used once
+                - It is denoted using '*'
+            
+            -->
+
+           <!-- <style>
+            *{
+                font-family:cursive;
+                color: brown;
+                background-color: bisque;
+            }
+           </style>
+            <h4>This is Universal</h4> -->
+
+        <!-- Multiple/Group Selectors -->
+         <!-- <h5>This is an Example of Multiple/ Group</h5> -->
+
+         <!-- <style>
+            #id-select,.class-select,p,h4{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+         </style> -->
+
+
+ <!-- Attribute Selector -->
+
+        <!-- Attribute selectors are represented using [attribute] 
+         and once declared gets applied to the complete html page -->
+        <!-- The attribute selector is used to select elements with a specific attribute 
+         or attribute value.
+        It can be used to style elements based on their attributes, 
+        such as type, name, or any custom attribute. -->
+
+        <!-- <style>
+            [type="text"]{
+                background-color: lightblue;
+            }
+            [type="password"]{
+                background-color: lightgreen;
+            }
+        </style>
+
+        <div>
+            <h1>Attribute Selector</h1>
+            <input type="text" placeholder="Text Input">
+            <input type="password" placeholder="Password Input">
+        </div> -->
+
+        <!-- Descendant Selector -->
+        <!-- The descendant selector is used to select elements that are descendants of a specified element.
+    -->
+        <!-- <style>
+            .container{
+                background-color: chocolate;
+                height: 200px;
+                width: 200px;
+            }
+
+            .container h1{
+                color: chartreuse;
+            }
+
+            .container  p {
+                 color: tomato;
+            }
+           
+        </style>
+
+        <div class="container">
+            <h1>Descendant Selector</h1>
+            <p>This is a paragraph in Descendant selection.</p>
+        </div> -->
+
+        <!-- Child Selector -->
+        <!-- The child selector is used to select elements that are direct children of a specified element. -->
+        <style>
+            .container > h1{
+                color: rgb(36, 149, 194);
+            }
+            .container > p{
+                color: rgb(152, 11, 11);
+            }
+        </style>
+        <div class="container">
+            <h1>Child Selector</h1>
+            <p>This is a paragraph in Child selection.</p>
+        </div>
+    </div>
+</body>
+</html>
